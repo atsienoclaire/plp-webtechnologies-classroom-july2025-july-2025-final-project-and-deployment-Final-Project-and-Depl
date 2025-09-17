@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery • KnowLocal</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">KnowLocal</a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Open navigation">☰</button>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content fade-in">
+    <h1>Gallery</h1>
+    <p>Filter images by category</p>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="agriculture">Agriculture</button>
+      <button class="filter-btn" data-filter="education">Education</button>
+      <button class="filter-btn" data-filter="health">Health</button>
+    </div>
+
+    <div class="gallery-grid" id="gallery-grid">
+      <figure class="gallery-item" data-category="agriculture">
+        <img src="https://images.pexels.com/photos/6508539/pexels-photo-6508539.jpeg" alt="Gallery 1" />
+        <figcaption>Farm workshop</figcaption>
+      </figure>
+      <figure class="gallery-item" data-category="education">
+        <img src="https://images.pexels.com/photos/5756752/pexels-photo-5756752.jpeg" alt="Gallery 2" />
+        <figcaption>Community class</figcaption>
+      </figure>
+      <figure class="gallery-item" data-category="health">
+        <img src="https://images.pexels.com/photos/33932453/pexels-photo-33932453.jpeg" alt="Gallery 3" />
+        <figcaption>Health worker</figcaption>
+      </figure>
+      <figure class="gallery-item" data-category="agriculture">
+        <img src="https://images.pexels.com/photos/7728336/pexels-photo-7728336.jpeg" alt="Gallery 4" />
+        <figcaption>Seed exchange</figcaption>
+      </figure>
+      <!-- add more images -->
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year-4"></span> KnowLocal</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

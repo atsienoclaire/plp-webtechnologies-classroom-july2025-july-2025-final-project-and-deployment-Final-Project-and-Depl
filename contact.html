@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact • KnowLocal</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">KnowLocal</a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Open navigation">☰</button>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content fade-in">
+    <h1>Contact</h1>
+    <p>Want to pilot or partner? Send a message.</p>
+
+    <form id="contact-form" novalidate>
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required minlength="2" />
+        <small class="error" id="error-name"></small>
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+        <small class="error" id="error-email"></small>
+      </div>
+
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required minlength="10"></textarea>
+        <small class="error" id="error-message"></small>
+      </div>
+
+      <button class="btn" type="submit">Send Message</button>
+      <p id="form-success" class="success" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year-5"></span> KnowLocal</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
