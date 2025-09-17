@@ -47,4 +47,4 @@ multipage-site/
 
 ## 🚀 Live URL
 The project has been deployed and is live at:  
-
+https://atsienoclaire.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/
